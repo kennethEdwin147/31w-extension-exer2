@@ -30,7 +30,8 @@ function sh2_31w_enqueue()
 
 add_action('wp_enqueue_scripts', 'sh2_31w_enqueue');
 
-function genere_adresse() {
+function genere_adresse() 
+{
     ///////////////////HTML
     $contenu = '<code class="code__adresse">';
     $contenu .= '3 800, rue Sherbrooke Est Montréal (Québec) H1X 2A2 | 514 254-7131';
@@ -39,4 +40,6 @@ function genere_adresse() {
     return $contenu;
 }
 
+
 add_shortcode('adr','genere_adresse');
+

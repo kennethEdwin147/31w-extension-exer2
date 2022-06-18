@@ -22,11 +22,14 @@
 
 
     elmOk.addEventListener('mousedown', function() {
+        document.querySelector('.site').classList.add('opacity__modal');
         elmBoite__modale.classList.add('boite__modale__ouvrir');
     });
 
     
     elmBoite__x.addEventListener('mousedown', function() {
+        document.querySelector('.site').classList.remove('opacity__modal');
+
         elmBoite__modale.classList.remove('boite__modale__ouvrir');
     });
 
