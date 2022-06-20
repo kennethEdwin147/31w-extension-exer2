@@ -20,7 +20,7 @@
 
         elmBoite__modale.classList.add('boite__modale');
         elmBoite__x.classList.add('boite__x');
-        elmBoite__x.innerHTML = "X";
+        elmBoite__x.innerHTML = `<span>X</span>`;
 
         elmBody.appendChild(elmBoite__modale);
     }
