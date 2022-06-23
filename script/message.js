@@ -1,6 +1,7 @@
 (function() {
     let elmBoite__modale,
-        elmBoite__x
+        elmBoite__x,
+        elmBoite__Contenu;
 
     let googleMap = `
         <div class="google_map">
@@ -8,14 +9,19 @@
         <div>
         `;
     
-
     function creer_boite_modale() {
         
         elmBoite__modale = document.createElement('div');
         elmBoite__x = document.createElement('button');
         elmBody = document.querySelector('body');
 
+        elmBoite__Contenu = document.createElement('div');
+        elmBoite__Contenu.classList.add('elmBoite__Contenu')
+
+
         elmBoite__modale.appendChild(elmBoite__x)
+        elmBoite__modale.appendChild(elmBoite__Contenu) 
+
         elmBoite__modale.insertAdjacentHTML('beforeend',googleMap);
 
         elmBoite__modale.classList.add('boite__modale');
@@ -23,6 +29,7 @@
         elmBoite__x.innerHTML = `<span>X</span>`;
 
         elmBody.appendChild(elmBoite__modale);
+        elmBoite__Contenu.innerHTML = "test";
     }
  
     creer_boite_modale();
@@ -41,9 +48,5 @@
         elmBoite__modale.classList.remove('boite__modale__ouvrir');
     });
 
-
-
-
-
-    
+ 
 })();
