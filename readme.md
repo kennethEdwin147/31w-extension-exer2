@@ -3,7 +3,7 @@
 ## Deuxième extension Wordpress
 ### Contient 2 fichiers
 
-[SiteGround extension 2](https://developer.wordpress.org/)
+[SiteGround extension 2](https://eddym91.sg-host.com/582-6n3-stage-285h/)
 
 > L'extension contient 3 fichiers:
 short_2.php
