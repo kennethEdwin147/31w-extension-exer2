@@ -5,7 +5,6 @@
  * Description: Extension utilisant plusieurs dossiers et permettant d'afficher ue adresse
  * Author URI: https://github.com/kennethEdwin147/31w-extension-exer2
  */ 
-
 function sh2_31w_enqueue() 
 {
     $version_css = filemtime(plugin_dir_path(__FILE__) . 'style.css');
@@ -39,7 +38,6 @@ function genere_adresse()
     $contenu .= '<button id="mon_bouton">click</button>';
     return $contenu;
 }
-
 
 add_shortcode('adr','genere_adresse');
 
